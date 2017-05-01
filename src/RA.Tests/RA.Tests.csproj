@@ -63,12 +63,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RA\RA.csproj">
-      <Project>{c93a3f2d-9db3-4e1e-874c-41750db4b191}</Project>
-      <Name>RA</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Data\Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
@@ -80,6 +74,12 @@
     <Content Include="Data\V3RestrictiveSchema.txt" />
     <Content Include="Data\V3ValidSchema.txt" />
     <Content Include="Data\V4ValidSchema.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestAssured.Net\RestAssured.Net.csproj">
+      <Project>{a6bc30e1-7855-40ec-bb85-7146d5cde29d}</Project>
+      <Name>RestAssured.Net</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

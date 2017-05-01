@@ -155,13 +155,12 @@ namespace RA
                 throw new ArgumentException("Schema is not valid", "schema", ex);
             }
 
-            IList<string> messages;
 
             var trimmedContent = _content.TrimStart();
 
             _isSchemaValid =
                 trimmedContent.StartsWith("{")
-                    ? JObject.Parse(_content).IsValid(jSchema, out messages)
+                    ? JObject.Parse(_content).IsValid(jSchema, out IList<string> messages)
                     : JArray.Parse(_content).IsValid(jSchema, out messages);
 
             if (!_isSchemaValid)

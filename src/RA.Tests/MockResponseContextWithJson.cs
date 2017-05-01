@@ -243,6 +243,7 @@ namespace RA.Tests
             _responseWithObject
                 .TestStatus("first", code => code == 200)
                 .TestBody("second", body => body.id != null)
+                .WriteAssertions()
                 .AssertAll();
         }
     }
