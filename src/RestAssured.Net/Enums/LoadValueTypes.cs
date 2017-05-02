@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace RA.Enums
 {
-    public class LoadValueTypes  //: Enumeration<LoadValueTypes, string>
+    public class LoadValueTypes 
     {
         public static readonly LoadValueTypes TotalCall = new LoadValueTypes("Total-Call", "Total Call");
         public static readonly LoadValueTypes TotalSucceeded = new LoadValueTypes("Total-Succeeded", "Total Succeeded");
@@ -13,7 +13,7 @@ namespace RA.Enums
         public static readonly LoadValueTypes MaximumTTLMs = new LoadValueTypes("Maximum-TTL-Ms", "Maximum TTL Ms");
         public static readonly LoadValueTypes MinimumTTLMs = new LoadValueTypes("Minimum-TTL-Ms", "Minimum TTL Ms");
 
-        public LoadValueTypes(string value, string displayName) //: base(value, displayName)
+        public LoadValueTypes(string value, string displayName)
         {
             Value = value;
             DisplayName = displayName;

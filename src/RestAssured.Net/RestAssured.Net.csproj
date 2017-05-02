@@ -5,8 +5,8 @@
     <RootNamespace>RA</RootNamespace>
     <PackageId>RestAssured.Net</PackageId>
     <Description>Easy to use REST interface tester</Description>
-    <Authors>Lam</Authors>
-    <Company />
+    <Authors>Lam Chan, Simon Birrer</Authors>
+    <Company></Company>
     <PackageReleaseNotes>Version 1.0 supporting .net standart 1.3</PackageReleaseNotes>
     <Copyright>Copyright ©  2017</Copyright>
     <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>

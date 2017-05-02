@@ -1,10 +1,8 @@
-﻿
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace RA.Enums
 {
-    public class HeaderType //: Enumeration<HeaderType, string>
+    public class HeaderType 
     {
         public static readonly HeaderType ContentType = new HeaderType("Content-Type", "Content Type");
         public static readonly HeaderType Accept = new HeaderType("Accept", "Accept");
@@ -19,7 +17,7 @@ namespace RA.Enums
             AcceptCharset
         };
 
-        private HeaderType(string value, string displayName) //: base(value, displayName)
+        private HeaderType(string value, string displayName)
         {
             Value = value;
             DisplayName = displayName;
